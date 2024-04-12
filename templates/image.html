@@ -1,0 +1,13 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+<h3 class="mt-4">Image Details</h3>
+<a href="/">Go back</a>
+<ul>
+    <li>Image ID - {{ image.image_id }}</li>
+    <li>Caption - {{ image.caption }}</li>
+    <li>Created at - {{ image.created_at }}</li>
+    <li>Author user - {{ image.author_user }}</li>
+    <li>Image link - {{ image.image_link }}</li>
+</ul>
+{% endblock %}

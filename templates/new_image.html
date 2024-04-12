@@ -1,0 +1,20 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+<h3 class="mt-4">New Movie</h3>
+<form action="/images" method="post">
+    <div class="mb-3">
+        <label for="caption" class="form-label">Caption</label>
+        <input type="text" class="form-control" id="caption" name="caption" required placeholder="Enter Caption">
+    </div>
+    <div class="mb-3">
+        <label for="image_link" class="form-label">Image Link</label>
+        <input type="text" class="form-control" id="image_link" name="image_link" required placeholder="Enter link">
+    </div>
+    <div class="mb-3">
+        <label for="author_user" class="form-label">User</label>
+        <input type="text" class="form-control" id="author_user" name="author_user">
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+{% endblock %}
