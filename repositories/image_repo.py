@@ -31,7 +31,7 @@ def get_image_bys_id(image_id):
                                 image
                             WHERE image_id = %s
                             ''', [image_id])
-            return cursor.fetchall()
+            return cursor.fetchone()
         
 
 def create_image(caption, image_link, author_user):
